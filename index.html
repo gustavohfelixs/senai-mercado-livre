@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFE91E;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm1">
+                    <a class="navbar-brand">
+                        <img src="https://logodownload.org/wp-content/uploads/2016/08/mercado-livre-logo-7.png" width="250" height="70" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secoundary">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="bi bi-geo-alt h4"></i>
+                            </div>
+                            <div class="col">
+                                <p class="fw-light mb-0" style="font-size: 14px; text-align: left;">Informe seu </p>
+                                <p class="fw-bold mb-0" style="text-align: left;">CEP</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="mb-1">
+                    <input type="text" class="form-control" id="cb1-edit" name="as_word" placeholder="Buscar produtos, marcas e muito mais…" maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" value="" aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="list" aria-expanded="false" role="combobox">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="jumbotron-heading ">Lista de encomendas</h1>
+        <hr/>
+        <table class="table table-hover  rounded-3 overflow-hidden ">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Valor Unitário</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tr class="clientes">
+                <td class="nome">Chevrolet</td>
+                <td>Chevrolet Onix 2019</td>
+                <td class="qtde">3</td>
+                <td class="unitario">500</td>
+                <td class="total">-</td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Ford </td>
+                <td>Ford Ranger 2017</td>
+                <td class="qtde">2</td>
+                <td class="unitario">800</td>
+                <td class="total">-</td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Hyundai</td>
+                <td>HB20 2022</td>
+                <td class="qtde">b</td>
+                <td class="unitario">400</td>
+                <td class="total">-</td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Fiat</td>
+                <td>Fiat Toro 2023</td>
+                <td class="qtde"> 2</td>
+                <td class="unitario">a</td>
+                <td class="total">-</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src ="javascript.js"></script>
+</body>
+</html>
