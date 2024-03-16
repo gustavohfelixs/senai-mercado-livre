@@ -66,3 +66,37 @@ function CalculaTotalEncomenda(valor) {
     return true;
   }
 }
+
+function adicionarEncomenda() {
+  // Pegar os valores do formulário
+  var nome = document.querySelector("input[name='nome']").value;
+  var quantidade = document.querySelector("input[name='quantidade']").value;
+  var produto = document.querySelector("select[name='produto']").value;
+  var valorUnitario = document.querySelector(
+    "input[name='valorUnitario']"
+  ).value;
+
+  // Validar se todos os campos foram preenchidos
+  if (!nome || !quantidade || !produto || !valorUnitario) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
+  // Criar uma nova linha na tabela
+  var tabela = document
+    .getElementById("tabelaEncomendas")
+    .getElementsByTagName("tbody")[0];
+  var novaLinha = tabela.insertRow();
+  novaLinha.insertCell(0).innerHTML = nome;
+  novaLinha.insertCell(1).innerHTML = quantidade;
+  novaLinha.insertCell(2).innerHTML = produto;
+  novaLinha.insertCell(3).innerHTML = valorUnitario;
+  novaLinha.insertCell(4).innerHTML =
+    '<button type="button" onclick="removerEncomenda(this)">Remover</button>';
+
+  // Limpar os campos do formulário
+  document.querySelector("input[name='nome']").value = "";
+  document.querySelector("input[name='quantidade']").value = "";
+  document.querySelector("select[name='produto']").selectedIndex = 0;
+  document.querySelector("input[name='valorUnitario']").value = "";
+}
