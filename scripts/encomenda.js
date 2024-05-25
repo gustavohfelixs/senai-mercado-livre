@@ -1,5 +1,7 @@
 function addEncomenda(produto) {
-  var tabela = document.querySelector("#itens-collection");
+  var tabela = document
+    .querySelector("#itens-collection")
+    .getElementsByTagName("tbody")[0];
 
   if (produto === undefined) {
     addEncomedaFromUser(tabela);

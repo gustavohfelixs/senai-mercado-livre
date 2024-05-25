@@ -1,7 +1,6 @@
 //Captura todos os clientes que fizeram encomenda
-dbClickRemoveItemFunction();
-
 findProducts();
+dbClickRemoveItemFunction();
 
 function dbClickRemoveItemFunction() {
   var tbody = document
